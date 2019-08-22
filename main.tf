@@ -12,9 +12,9 @@ variable "subnet_address_prefixes" {
 }
 
 module "networking" {
-  source  = "app.terraform.io/app-dev-modules/networking/azurerm"
-  version = "0.0.1"
-
+  source  = "aa-training.digitalinnovation.dev/tomwaa1/networking/azurerm"
+  version = "0.0.2"
+  
   name                    = "${var.name}"
   location                = "${var.location}"
   vnet_address_spacing    = "${var.vnet_address_spacing}"
@@ -23,7 +23,7 @@ module "networking" {
 
 module "webserver" {
   source  = "app.terraform.io/app-dev-modules/webserver/azurerm"
-  version = "0.0.1"
+  version = "0.0.2"
 
   name      = "${var.name}"
   location  = "${var.location}"
