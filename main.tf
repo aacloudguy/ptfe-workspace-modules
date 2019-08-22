@@ -22,7 +22,7 @@ module "networking" {
 }
 
 module "webserver" {
-  source  = "app.terraform.io/app-dev-modules/webserver/azurerm"
+  source  = "aa-training.digitalinnovation.dev/tomwaa1/webserver/azurerm"
   version = "0.0.2"
 
   name      = "${var.name}"
