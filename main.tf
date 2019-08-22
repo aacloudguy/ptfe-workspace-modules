@@ -13,7 +13,7 @@ variable "subnet_address_prefixes" {
 
 module "networking" {
   source  = "aa-training.digitalinnovation.dev/tomwaa1/networking/azurerm"
-  version = "0.0.2"
+  version = "0.0.1"
   
   name                    = "${var.name}"
   location                = "${var.location}"
@@ -23,7 +23,7 @@ module "networking" {
 
 module "webserver" {
   source  = "aa-training.digitalinnovation.dev/tomwaa1/webserver/azurerm"
-  version = "0.0.2"
+  version = "0.0.1"
 
   name      = "${var.name}"
   location  = "${var.location}"
